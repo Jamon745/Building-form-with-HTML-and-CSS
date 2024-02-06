@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOB APPLICATION FORM</title>
+    <style>
+      body {
+        /* height: 100%;
+          width: 100%; */
+
+        background-color: rebeccapurple;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      form {
+        /* border: 2px solid black; */
+        height: 100%;
+        width: 50vw;
+        background-color: whitesmoke;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+      }
+      .wrapper {
+        /* height: 100vh; */
+        margin: 20px;
+        padding: 20px;
+        border: 2px solid rgb(158, 20, 20);
+        border-radius: 10px;
+      }
+
+      .wrapper h1 {
+        margin: auto -20px;
+      }
+
+      label,
+      input,
+      select {
+        margin-top: 15px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 25px;
+        text-transform: uppercase;
+        background-color: rgb(158, 20, 20);
+        padding: 20px 0;
+        margin-top: -20px;
+        color: #fff;
+      }
+
+      h3 {
+        padding-left: 20px;
+        padding-top: 20px;
+        color: rgb(158, 20, 20);
+        font-size: 18px;
+        border-bottom: 1px dashed rgb(158, 20, 20);
+      }
+
+      input {
+        width: 200px;
+        padding: 10px;
+      }
+
+      h6 {
+        display: inline;
+      }
+
+      .first {
+        margin-left: 70px;
+      }
+
+      .last {
+        margin-left: 180px;
+      }
+
+      .firstLast {
+        margin-bottom: 20px;
+      }
+
+      .Address #line1, #line2{
+        width: 450px;
+      }
+
+      .gender {
+        margin-top: 20px;
+      }
+
+      .gender input {
+        margin-right: -80px;
+      }
+
+      .number input,
+      .email input,
+      .leisure input {
+        width: 400px;
+        margin-left: 30px;
+      }
+
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <div class="wrapper">
+        <h1>Job Application Form</h1>
+
+        <h3>Personal Information</h3>
+
+        <div>
+          <label id="first">Full Name<span>*</span></label>
+          <input type="text" name="" id="first" />
+          <input type="text" />
+        </div>
+
+        <div class="firstLast">
+          <h6 class="first">First</h6>
+          <h6 class="last">Last</h6>
+        </div>
+
+        <div>
+          <label for="date">Date of Birth<span>*</span></label>
+          <input type="date" />
+        </div>
+
+        <div class="gender">
+          <label for="">Gender:<span>*</span></label>
+          <input type="radio" name="gender" id="" />
+          <label for="">Female</label>
+          <input type="radio" name="gender" id="" />
+          <label for="">Male</label>
+        </div>
+
+        <div class="edu">
+          <label for="edu">Education:<span>*</span></label>
+          <select>
+            <option value="">Select</option>
+            <option value="">SSCE</option>
+            <option value="">OND/NCE</option>
+            <option value="">HND/BSC</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="resume">Resume:<span>*</span></label>
+          <input type="file" name="" id="resume" />
+        </div>
+
+        <div class="Address">
+          <label for="">Address <span>*</span></label>
+          <input type="text" id="line1" />
+
+          <h6>Addressline 2</h6>
+          <input type="text" id="line2" /><br>
+
+          <h6>City</h6>
+          <input type="text" id="" />
+
+          <h6>State/Region/Provence</h6>
+          <input type="text" id="" />
+
+          <h6>Postal/Zip Code</h6>
+          <input type="text" id="" />
+
+          <h6>Country</h6>
+          <select name="" id="">
+            <option value="">select</option>
+          </select>
+        </div>
+
+        <div class="number">
+          <label for="number">Number<span>*</span></label>
+          <input type="Number" id="number" />
+        </div>
+
+        <div class="email">
+          <label for="email">Email <span>*</span></label>
+          <input type="email" id="email" />
+        </div>
+
+        <div class="leisure">
+          <label for="leisure">Leisure <span>*</span></label>
+          <input type="" id="email" />
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
